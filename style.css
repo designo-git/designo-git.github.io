@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0E141C;
+}
+
+h1 {
+  color: #bdb3a3;
+  margin: auto;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.intro {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: fit-content;
+  min-width: fit-content;
+}
+
+.graphic {
+  padding-top: 5%;
+  padding-right: 3%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.graphic img {
+  height: 40rem;
+  min-width: fit-content;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+}
+
+#main-text {
+  font-size: 70pt;
+  width: 2.5rem;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+section {
+  min-height: fit-content;
+  min-width: fit-content;
+}
+
+.content {
+  color: #8197AC;
+  font-size: 20pt;
+  width: 50vw;
+  padding-left: 5%;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.projects {
+  color: #8197AC;
+  display: flex;
+  justify-content: space-around;
+}
+
+.game1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  min-height: fit-content;
+  min-width: fit-content;
+}
+
+.game2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  min-height: fit-content;
+  min-width: fit-content;
+}
+
+h2 {
+  font-size: 40pt;
+  color: #8197AC;
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  padding-top: 10%;
+  padding-bottom: 5%;
+
+}
+
+h3 {
+  text-align: center;
+  font-size: 30pt;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #bdb3a3;
+}
+
+.forest a {
+  color: #bdb3a3;
+  text-decoration: none;
+}
+
+.forest a:hover {
+  color: #733c22;
+}
+
+.flashunt a {
+  color: #bdb3a3;
+  text-decoration: none;
+}
+
+.flashunt a:hover {
+  color: #733c22;
+}
+
+.gamecontent {
+  color: #8197AC;
+  font-size: 20pt;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 2rem;
+  min-height: fit-content;
+  min-width: fit-content;
+}
+
+.sketches img {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  border-radius: 10%;
+}
+
+.sketches {
+  justify-items: center;
+  min-width: fit-content;
+  min-height: fit-content;
+}
+
+#line {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.feedback {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #bdb3a3;
+  text-align: center;
+  align-content: center;
+  font-size: 20pt;
+  min-height: fit-content;
+  min-width: fit-content;
+}
+
+#name {
+  background-color: #bdb3a3;
+  text-align: center;
+  width: 50%;
+  height: 5rem;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0;
+  box-sizing: border-box;
+  border-color: #0E141C;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+}
+
+#email {
+  background-color: #bdb3a3;
+  text-align: center;
+  width: 50%;
+  height: 5rem;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0;
+  box-sizing: border-box;
+  border-color: #0E141C;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  min-width: auto;
+  min-height: auto;
+}
+
+#submit {
+  background-color: #8197AC;
+  width: 30%;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0;
+  box-sizing: border-box;
+  border-color: #0E141C;
+  border-radius: 0.75rem;
+  min-width: auto;
+  min-height: auto;
+}
+
+#submit:hover {
+  background-color: #243e5f;
+}
+
+.accounts {
+  color: #8197AC;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 0.5%;
+  padding-right: 0.5%;
+  min-width: auto;
+  min-height: auto;
+}
+
+#linkedin img {
+  background-color: #bdb3a3;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 10%;
+}
+
+#linkedin:hover {
+  background-color: #733c22;
+}
+
+#instagram img {
+  background-color: #bdb3a3;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 10%;
+}
+
+#instagram:hover {
+  background-color: #733c22;
+}
+
+
+
+.montserrat-alternates-semibold {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
