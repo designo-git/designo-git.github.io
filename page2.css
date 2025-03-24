@@ -32,10 +32,81 @@ h3 {
 }
 
 .projects {
-    color: #8197AC;
     display: flex;
     justify-content: space-around;
+    margin-top: 2rem;
+    gap: 2rem;
+    padding: 0 1.5rem;
+    flex-wrap: wrap;
 }
+
+.project-box a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.project-box {
+    background-color: #0E141C; 
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 22rem;
+    border: 2px solid #8197AC; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 1rem #607ea2; 
+    margin-bottom: 2rem;
+}
+
+.project-box:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0 1.5rem #607ea2; 
+}
+
+.image-container {
+    margin-top: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .project-box {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 30pt;
+    }
+
+    h3 {
+        font-size: 22pt;
+    }
+
+    .gamecontent {
+        font-size: 16pt;
+    }
+}
+
+
 
 .game1 {
     display: flex;
@@ -49,25 +120,6 @@ h3 {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-}
-
-
-.forest a {
-    color: #bdb3a3;
-    text-decoration: none;
-}
-
-.forest a:hover {
-    color: #733c22;
-}
-
-.flashunt a {
-    color: #bdb3a3;
-    text-decoration: none;
-}
-
-.flashunt a:hover {
-    color: #733c22;
 }
 
 .gamecontent {
@@ -118,21 +170,135 @@ h3 {
     .sketches img {
         width: 80%;
         height: auto;
+        align-items: center;
     }
 }
 
-.contact a {
-    color: #bdb3a3;
-    text-decoration: none;
+.contact-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 0 1rem;
 }
 
-.contact a:hover {
-    color: #733c22;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0E141C;
+    border: 0.15rem solid #8197AC;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 0 0.8rem #607ea2;
+    width: 90%;
+    max-width: 30rem;
+    transition: all 0.3s;
 }
+
+form:hover {
+    box-shadow: 0 0 1.5rem #8197AC;
+}
+
+form p {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #8197AC;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #bdb3a3;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    color: #0E141C;
+    text-align: center;
+    vertical-align: middle;
+    outline: none;
+    transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 0.5rem #607ea2;
+    background-color: #d6cdc3;
+}
+
+textarea {
+    height: 10rem;
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #8197AC;
+    color: #0E141C;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    margin-top: 1rem;
+}
+
+.submit-button:hover {
+    background-color: #bdb3a3;
+    color: #0E141C;
+    box-shadow: 0 0 0.5rem #8197AC;
+    transform: translateY(-0.2rem);
+}
+
+@media (max-width: 48rem) {
+    form {
+        padding: 1.5rem;
+    }
+    label {
+        font-size: 1.1rem;
+    }
+    input, textarea {
+        padding: 0.7rem;
+        font-size: 0.95rem;
+    }
+    .submit-button {
+        padding: 0.6rem 1.5rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 25rem) {
+    form {
+        padding: 1rem;
+    }
+    label {
+        font-size: 1rem;
+    }
+    input, textarea {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+    .submit-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
+}
+
+
 
 .accounts {
     justify-items: right;
     padding-bottom: 2vw;
+    padding-top: 5vw;
 }
 
 .footer a {
@@ -181,3 +347,4 @@ h3 {
     background-color: #6563ff;
     border-radius: 50%;
 }
+
