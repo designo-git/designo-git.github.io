@@ -2,10 +2,23 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: #0E141C;
 }
 
-body {
-  background-color: #0E141C;
+.page1{
+  max-width: 100%;
+  border: 2px solid green;
+}
+.page2{
+  max-width: 100%;
+  border: 2px solid yellow;
+}
+.page3{
+  border: 2px solid red;
+  max-width: 100%;
+}
+.page4{
+  max-width: 100%;
 }
 
 h1 {
@@ -21,8 +34,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  min-height: fit-content;
-  min-width: fit-content;
+  z-index: 2;
 }
 
 .graphic {
@@ -30,6 +42,7 @@ h1 {
   padding-right: 3%;
   display: flex;
   align-items: flex-end;
+  z-index: 1;
 }
 
 .graphic img {
@@ -40,6 +53,7 @@ h1 {
 .hero {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 #main-text {
@@ -75,8 +89,6 @@ section {
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
-  min-height: fit-content;
-  min-width: fit-content;
 }
 
 .game2 {
@@ -84,8 +96,6 @@ section {
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
-  min-height: fit-content;
-  min-width: fit-content;
 }
 
 h2 {
@@ -97,7 +107,6 @@ h2 {
   font-style: normal;
   padding-top: 10%;
   padding-bottom: 5%;
-
 }
 
 h3 {
@@ -135,8 +144,6 @@ h3 {
   font-weight: 400;
   font-style: normal;
   padding-top: 2rem;
-  min-height: fit-content;
-  min-width: fit-content;
 }
 
 .sketches img {
@@ -150,36 +157,41 @@ h3 {
 
 .sketches {
   justify-items: center;
-  min-width: fit-content;
-  min-height: fit-content;
 }
 
 #line {
   display: flex;
   gap: 2rem;
   padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.form{
+  /* background: blue; */
+  text-align: center;
+  justify-items: center;
 }
 
 .feedback {
+  /* background-color: red; */
   font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   color: #bdb3a3;
   text-align: center;
-  align-content: center;
+  justify-content: space-around;
   font-size: 20pt;
-  min-height: fit-content;
-  min-width: fit-content;
+  display: flex;
+  flex-direction: column;
 }
 
 #name {
   background-color: #bdb3a3;
   text-align: center;
-  width: 50%;
-  height: 5rem;
-  padding: 0.75rem 1.25rem;
-  margin: 0.5rem 0;
+  width: 40%;
+  height: 3rem;
+  justify-items: center;
   box-sizing: border-box;
   border-color: #0E141C;
   border-radius: 0.75rem;
@@ -189,28 +201,25 @@ h3 {
 #email {
   background-color: #bdb3a3;
   text-align: center;
-  width: 50%;
-  height: 5rem;
-  padding: 0.75rem 1.25rem;
-  margin: 0.5rem 0;
+  justify-items: center;
+  width: 40%;
+  height: 3rem;
   box-sizing: border-box;
   border-color: #0E141C;
   border-radius: 0.75rem;
   font-size: 1rem;
-  min-width: auto;
-  min-height: auto;
 }
 
 #submit {
   background-color: #8197AC;
+  text-align: center;
+  justify-items: center;
   width: 30%;
-  padding: 0.75rem 1.25rem;
-  margin: 0.5rem 0;
   box-sizing: border-box;
   border-color: #0E141C;
   border-radius: 0.75rem;
-  min-width: auto;
-  min-height: auto;
+  min-width: 2rem;
+  min-height: 2rem;
 }
 
 #submit:hover {
@@ -219,8 +228,6 @@ h3 {
 
 .accounts {
   color: #8197AC;
-  font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   display: flex;
@@ -228,8 +235,6 @@ h3 {
   align-items: flex-end;
   padding-bottom: 0.5%;
   padding-right: 0.5%;
-  min-width: auto;
-  min-height: auto;
 }
 
 #linkedin img {
