@@ -5,20 +5,14 @@
   background-color: #0E141C;
 }
 
-.page1{
+.page1 {
   max-width: 100%;
-  border: 2px solid green;
+  min-width: 100%;
 }
-.page2{
+
+.page2 {
   max-width: 100%;
-  border: 2px solid yellow;
-}
-.page3{
-  border: 2px solid red;
-  max-width: 100%;
-}
-.page4{
-  max-width: 100%;
+  min-width: fit-content;
 }
 
 h1 {
@@ -61,11 +55,6 @@ h1 {
   width: 2.5rem;
   padding-left: 5%;
   padding-top: 5%;
-}
-
-section {
-  min-height: fit-content;
-  min-width: fit-content;
 }
 
 .content {
@@ -136,6 +125,15 @@ h3 {
   color: #733c22;
 }
 
+.contact a{
+  color: #bdb3a3;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #733c22;
+}
+
 .gamecontent {
   color: #8197AC;
   font-size: 20pt;
@@ -166,100 +164,6 @@ h3 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-
-.form{
-  /* background: blue; */
-  text-align: center;
-  justify-items: center;
-}
-
-.feedback {
-  /* background-color: red; */
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #bdb3a3;
-  text-align: center;
-  justify-content: space-around;
-  font-size: 20pt;
-  display: flex;
-  flex-direction: column;
-}
-
-#name {
-  background-color: #bdb3a3;
-  text-align: center;
-  width: 40%;
-  height: 3rem;
-  justify-items: center;
-  box-sizing: border-box;
-  border-color: #0E141C;
-  border-radius: 0.75rem;
-  font-size: 1rem;
-}
-
-#email {
-  background-color: #bdb3a3;
-  text-align: center;
-  justify-items: center;
-  width: 40%;
-  height: 3rem;
-  box-sizing: border-box;
-  border-color: #0E141C;
-  border-radius: 0.75rem;
-  font-size: 1rem;
-}
-
-#submit {
-  background-color: #8197AC;
-  text-align: center;
-  justify-items: center;
-  width: 30%;
-  box-sizing: border-box;
-  border-color: #0E141C;
-  border-radius: 0.75rem;
-  min-width: 2rem;
-  min-height: 2rem;
-}
-
-#submit:hover {
-  background-color: #243e5f;
-}
-
-.accounts {
-  color: #8197AC;
-  font-weight: 400;
-  font-style: normal;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding-bottom: 0.5%;
-  padding-right: 0.5%;
-}
-
-#linkedin img {
-  background-color: #bdb3a3;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 10%;
-}
-
-#linkedin:hover {
-  background-color: #733c22;
-}
-
-#instagram img {
-  background-color: #bdb3a3;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 10%;
-}
-
-#instagram:hover {
-  background-color: #733c22;
-}
-
-
 
 .montserrat-alternates-semibold {
   font-family: "Montserrat Alternates", sans-serif;
