@@ -165,38 +165,35 @@ h3 {
   color: #733c22;
 }
 
-#redirect{
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 15pt;
-  text-align: center;
-  color: #8197AC;
-}
-
 .accounts{
   justify-items:right;
+  padding-bottom: 3vw;
 }
 
 #instagram img{
-background-color: #733c22;
-border-radius: 0.75rem;
-width: 5rem;
-height: 5rem;
+width: 4.5rem;
+height: 4.5rem;
 }
 #instagram img:hover{
-  background-color: #bdb3a3;
+  background-color: #b729a8;
+  border-radius: 1.5rem;
 }
 #linkedin img{
-  background-color: #733c22;
-  border-radius: 0.75rem;
-  width: 5rem;
-height: 5rem;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 #linkedin img:hover{
-  background-color: #bdb3a3;
+  background-color: #2867b2;
+  border-radius: 50%;
 }
-
+#github img{
+  width:4.5rem;
+  height: 4.5rem;
+}
+#github img:hover{
+  background-color: #6563ff;
+  border-radius: 50%;
+}
 .montserrat-alternates-semibold {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
